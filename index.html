@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptação de imagem</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+        html, body {
+            height: 100%;
+            margin: 0px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            font-family: 'Oswald';
+            background-color: #35ca5d;
+        }
+
+        header {
+            padding-top: 1px;
+            width: 100%;
+            color: white;
+            background-image: linear-gradient(to top, #063d1e, #2da463);
+        }
+
+        header h1, p {
+            text-align: center;
+        }
+
+        header > h1 {
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 27px;
+            font-family: arial;
+        }
+
+        header > nav {
+            padding: 8px;
+        }
+
+        nav > a {
+            color: #81dca5;
+            text-decoration: none;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        a:hover {
+            color: white;
+            background-image: linear-gradient(to bottom, #2fa866, #1a5c37);
+            border-radius: 2px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: auto;
+            padding-bottom: 100px;
+        }
+
+        picture {
+            margin: auto;
+        }
+
+        picture #simg2 {
+            padding: 30px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /*width: auto;*/
+            background-color: white;
+            border-radius: 0px 0px 12px 12px;
+            box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.274);
+        }
+
+        div h1, div h2, div p {
+            margin: auto;
+            width: 800px;
+        }
+
+        div h1 {
+            color: #063d1e;
+            padding-top: 19px;
+            text-align: justify;
+        }
+
+        div h2 {
+            padding-left: 10px;
+            background-image: linear-gradient(to right, #1a5c3766, #2fa86500);
+        }
+
+        div p {
+            text-align: justify;
+            text-indent: 1em;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            font-size: 25px;
+        }
+
+        p mark {
+            color: #35ca5d;
+            background-color: transparent;
+        }
+
+        footer {
+            width: 100%;
+            bottom: 0px;
+            position: fixed;
+            background-image: linear-gradient(to top, #063d1e, #2da463);
+        }
+
+        footer p {
+            color: white;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CURIOSIDADE DE TECNOLOGIA</h1>
+        <p>Tudo aquilo que você sempre quis saber sobre o mundo <br> Tech, em um unico lugar</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Fale conosco</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>História do Mascote do Android</h1>
+            <p>Provavelmente você sabe que o sistema operacional <mark>Android</mark>, mantido pelo <mark>Google</mark> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
+            <h2>A primeira versão</h2>
+            <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado Dan Morrill. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+            <picture>
+                <source media="(max-width: 750px)" srcset="imgs/immP1.png">
+                <img src="imgs/imG1.png" alt="">
+            </picture>
+            <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.</p>
+            <h2>Surge um novo mascote</h2>
+            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+            <picture>
+                <source media="(max-width: 750px)" srcset="imgs/imP2.jpg">
+                <img id="simg2" src="imgs/imG2.jpg" alt="">
+            </picture>
+        </div>
+        <footer><p>Desenvolvido por G-Tech</p></footer>
+    </main>
+</body>
+</html>
